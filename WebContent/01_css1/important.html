@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>내부스타일 시트,important</title>
+<style>
+body{
+	font-family:'궁서'; /* 폰트는 작은 따옴표 */
+	color:pink;
+}
+#habor{
+	border: 1px solid gray;
+	padding: 10px;
+	color: green;
+}
+.heading{
+	color:pink;
+	border: 1px solid gray;
+	padding: 10px;
+}
+h1{
+	color:blue;
+}
+p{
+	font-family : italic; 
+	color: greenyellow;
+	font-weight:bold;
+}
+/*p{
+	color:red !important; /* 최우선적용 */
+}*/
+</style>
+</head>
+<body>
+<h1 id="habor" class="heading">세계 3대 미항</h1> <!-- id와 class에서 color지정 충돌 -->
+<img src ="rio.png" alt="브라질">
+<p style ="color:yellow">시드니, 호주</p><!--  !important 다음이로 제일 먼저 적용되는 것이 태그안에 style -->
+<P>중요하다아아아아</P>
+<P>중요하다아아아아</P>
+
+<ul>
+	<li>블루베리</li>
+	<li>토마토</li>
+	<li>딸기</li>
+</ul>
+</body>
+</html>
